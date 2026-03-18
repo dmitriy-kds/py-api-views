@@ -94,6 +94,7 @@ class ActorDetail(
     def delete(self, request: Request, *args, **kwargs) -> Response:
         return self.destroy(request, *args, **kwargs)
 
+
 class CinemaHallViewSet(
     viewsets.GenericViewSet,
     mixins.ListModelMixin,
