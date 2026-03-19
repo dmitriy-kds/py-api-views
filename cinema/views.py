@@ -76,8 +76,8 @@ class ActorList(
 class ActorDetail(
     generics.GenericAPIView,
     mixins.RetrieveModelMixin,
+    mixins.DestroyModelMixin,
     mixins.UpdateModelMixin,
-    mixins.DestroyModelMixin
 ):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
